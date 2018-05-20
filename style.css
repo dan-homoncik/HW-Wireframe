@@ -1,13 +1,20 @@
+* {
+    box-sizing: border-box;
+}
 body {
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     color: #777;
     background-color: #777;
     width: 960px;
     font-size: 18px;
+    text-align: center;
+    margin: auto;
+    max-width: 960px;
 }
 
 Header, Nav, Section, Aside, Footer {
     background-color: #ebebeb;
+    border: solid 1px red;
 }
 
 Article {
@@ -19,3 +26,23 @@ h1, p {
     color: #777;
     background-color: #ebebeb;
 }
+
+.main-container{
+    overflow: auto;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+section{
+    float: left;
+}
+
+aside{
+    float: right;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
