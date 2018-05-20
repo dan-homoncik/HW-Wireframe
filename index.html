@@ -8,9 +8,14 @@
 
 <body>
 
+    <!--Created a class called main-container to match the 
+        continuity of the various elemnts in the example-->
+    
     <header class="main-container">header</header>
     
     <nav class="main-container">nav</nav>
+
+    <!--Used clearfix here so the inner elements would flow together. It was my friend-->
 
     <div class="clearfix">
         
@@ -18,19 +23,22 @@
             
             <h1>section</h1>
             
+            <!--Fixed width and height on article and aside to fix re-sizing issue-->
             <article>
-                <h1>article</h1>
-                <header>h1, h2, h3</header>
-                <p>p</p>
+                <h2>article</h2>
+                <!--Created a custom article container class so that the 
+                    header and p class would be the same size-->
+                <header class="article-container">h1, h2, h3</header>
+                <p class="article-container">p</p>
             </article> 
-                
+
         </section>
  
         <aside class="main-container"><h1>aside</h1></aside>
     
     </div>
 
-    <footer>footer</footer>
+    <footer class="main-container">footer</footer>
 </body>
 
 </html>
